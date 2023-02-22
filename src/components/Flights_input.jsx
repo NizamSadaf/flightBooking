@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import { flightadd } from '../redux/flightBook/action'
+import img1 from "../assets/icons/Frame.svg"
+import img2 from "../assets/icons/Frame (1).svg"
+import vec1 from "../assets/icons/Vector (1).svg"
+import vec2 from "../assets/icons/Vector (2).svg"
+import vec3 from "../assets/icons/Vector (3).svg"
 const Flights_input = () => {
   const [disable,setDisable]=useState(false)
   const dispatch=useDispatch()
@@ -47,7 +52,7 @@ const Flights_input = () => {
          <div class="des-from">
            <p>Destination From</p>
            <div class="flex flex-row">
-             <img src="./img/icons/Frame.svg" alt="" />
+             <img src={img1} alt="" />
              <select class="outline-none px-2 py-2 w-full" name="from" id="lws-from" required>
                <option value="" hidden>Please Select</option>
                <option value="Dhaka">Dhaka</option>
@@ -60,7 +65,7 @@ const Flights_input = () => {
          <div class="des-from">
            <p>Destination To</p>
            <div class="flex flex-row">
-             <img src="./img/icons/Frame.svg" alt="" />
+             <img src={img1} alt="" />
              <select class="outline-none px-2 py-2 w-full" name="to" id="lws-to" required>
                <option value="" hidden>Please Select</option>
                <option>Dhaka</option>
@@ -77,7 +82,7 @@ const Flights_input = () => {
          <div class="des-from">
            <p>Guests</p>
            <div class="flex flex-row">
-             <img src="./img/icons/Vector (1).svg" alt="" />
+             <img src={vec1} alt="" />
              <select class="outline-none px-2 py-2 w-full" name="guests" id="lws-guests" required>
                <option value="" hidden>Please Select</option>
                <option value="1">1 Person</option>
@@ -90,7 +95,7 @@ const Flights_input = () => {
          <div class="des-from !border-r-0">
            <p>Class</p>
            <div class="flex flex-row">
-             <img src="./img/icons/Vector (3).svg" alt="" />
+             <img src={vec3} alt="" />
              <select class="outline-none px-2 py-2 w-full" name="ticketClass" id="lws-ticketClass" required>
                <option value="" hidden>Please Select</option>
                <option>Business</option>
